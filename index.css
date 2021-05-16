@@ -1,0 +1,121 @@
+
+/*-----General-----*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: poppins;
+    margin:0;
+    background-color: hsl(0, 0%, 98%);
+}
+.b-heading h1{
+    font-size: 1.5rem;
+}
+.b-heading, h2 {
+    font-weight: 600;
+
+    color: hsl(234, 12%, 34%);
+    margin-top: 0%;
+}
+h1 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 0%;
+}
+h2 {
+    margin-bottom: 0;
+}
+p {
+    font-weight: 200;
+    font-size: 1em;
+    color: hsl(229, 6%, 66%);
+}
+.main-para p {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 8vw;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: -1px 10px 15px 5px hsl(0, 0%, 90%);
+}
+.supervisor{
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.team{
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.karma{
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.calculator{
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+img{
+    max-width: 60px;
+    height: 100%;
+    align-self: flex-end;
+}
+footer{
+    height: 10vh;
+}
+
+/*-----Layout For Mobile-----*/
+@media screen and (min-width:300px)  {
+    .main-para{
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (min-width:1400px) {
+    
+    .main-para{
+        text-align: center;
+        margin: 10vh 4vw 8vh;
+    }
+    .main-para p{
+        margin-left: 27vw;
+        margin-right: 27vw;
+    }
+    .card{
+        margin: 0%;
+    }
+    .boxes {
+        display: flex;
+        justify-content:space-evenly;
+        margin: 0 10vw;
+        
+    }
+    .supervisor {
+        align-self: center;
+        flex-grow: 1;
+        flex-basis:50%;
+        margin-right: 30px;
+    }
+    .calculator{
+        align-self: center;
+        flex-grow: 1;
+        flex-basis: 50%;
+        margin-left: 30px;
+    }
+    .cntr{
+        align-self: center;
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+    .team{
+        margin-bottom: 30px;
+    }
+    .karma{
+        margin-top: 30px;
+    }
+}
